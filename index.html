@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CodPro</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="whole-page">
+    <!-- nav bars -->
+    <div class="nav">
+      <header class="logo">
+        <div class="logodiv">
+          <img src="logo.png" alt="logo" />
+        </div>
+      </header>
+      <nav class="links">
+        <a href="#">Course</a>
+        <a href="#">Docs</a>
+        <a href="#">Certificate</a>
+        <a href="#" class="not">About</a>
+      </nav>
+            <nav class="spread">
+        <a href="#">Course</a>
+        <a href="#">Docs</a>
+        <a href="#">Certificate</a>
+        <a href="#" class="not">About</a>
+      </nav>
+      <div class="manu"><i class="fa-solid fa-bars"></i></div>
+    </div>
+    <!-- leading page -->
+    <div class="leading">
+      <div class="head-lead">
+        <div class="head">
+          I am <span id="highlight">C++ Language Engineer_</span>
+        </div>
+        <div class="dev-logo">
+          <div class="seprate-img">
+            <img src="profile10.jpg" alt="myPic" />
+          </div>
+        </div>
+      </div>
+      <div class="discription">
+        <p>Hi developers, I'm CodPro a software engineer at Google. I know multiple languages like <code>C, C++, Java, Python & JavaScript</code></p>
+        <div class="hireMe">
+          <button type="submit" class="hire"><a href="mailto: codprosui@gmail.com">Hire Me</a></button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- course level -->
+    
+    <!-- my quotes -->
+    <div class="quotes">
+      <div class="card">
+        <div class="dev-img">
+          <img src="my_i.jpg" alt="dev." id="image" />
+        </div>
+        <h2 id="title">CodPro</h2>
+        <p id="subTitle">Software Engineer</p>
+        <div class="dev-description">
+          <sup>
+            <i class="fa-solid fa-quote-left"></i>
+          </sup>
+          <span id="des">I am a software engineer at Google. I know multiple languages like C, C++, Java, Python and JavaScript.
+          </span>
+        </div>
+        <div class="right-side"><i>-Google</i>
+        </div>
+      </div>
+    </div>
+    
+    <!-- progress crog language -->
+    <div class="progress">
+      <svg>
+        <defs>
+          <filter id="glow">
+            <feGaussianBlur stdDeviation="4" result="coloredBlur" />
+            <feMerge>
+              <feMergeNode in="coloredBlur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
+        <circle cx="150" cy="100" r="80" />
+      </svg>
+      <div class="details">
+        <h2>Crog Language</h2>
+        <p>78%</p>
+      </div>
+    </div>
+    
+    <!-- login or download -->
+    <div class="tools">
+      <div class="entry">
+        <button type="submit">Login</button>
+        <button type="submit">Register</button>
+      </div>
+      <div class="crog">
+        <button type="submit">Download<i class="fa-solid fa-download"></i></button>
+      </div>
+    </div>
+    
+    <!-- code -->
+    <div class="code">
+      <p>Create new file with extension <code class="file">example.cr</code></p>
+      <div class="show">
+        <div class="ext">
+          <code class="extension">example.cr</code>
+        </div>
+        <div>
+  <pre>
+     // connect to server
+     link -> "https://api.crognet.io"
+     as server
+  
+     // send data
+     emit server {
+     user: "CodPro"
+     message: "Ping"
+     }
+  
+     // wait for reply
+     when reply from server =>
+     show "Response received:"
+     show reply.data
+     end
+  
+     // auto retry on fail
+     if fail(server) =>
+     retry after 5s
+     end
+  </pre>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer">
+      Copyright &copy; 2025 Crog_
+    </div>
+    <!-- end page -->
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
+
